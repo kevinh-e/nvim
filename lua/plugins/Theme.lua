@@ -38,6 +38,7 @@ return {
     name = "oldworld",
     lazy = false,
     priority = 1000,
+    opts = {},
   },
   {
     "uloco/bluloco.nvim",
@@ -53,6 +54,15 @@ return {
     "tiagovla/tokyodark.nvim",
     name = "tokyodark",
     opts = {},
+  },
+  {
+    "ramojus/mellifluous.nvim",
+    name = "mellifluous",
+    opts = {
+      transparent_background = {
+        enabled = true,
+      },
+    },
   },
   {
     "shaunsingh/nord.nvim",
@@ -72,7 +82,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "sonokai",
-      -- colorscheme = "gruvbox",
+      -- colorscheme = "mellifluous",
       colorscheme = "oldworld",
       -- colorscheme = "bluloco",
       -- colorscheme = "catppuccin",
