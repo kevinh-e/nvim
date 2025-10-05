@@ -55,29 +55,41 @@ return {
     opts = {},
   },
   {
-    "shaunsingh/nord.nvim",
-    name = "nord",
+    "ramojus/mellifluous.nvim",
+    name = "mellifluous",
     opts = {
-      nord_contrast = false,
-      nord_borders = true,
-      nord_disable_background = true,
-      nord_cursorline_transparent = true,
-      nord_enable_sidebar_background = true,
-      nord_italic = true,
-      nord_bold = true,
+      transparent_background = {
+        enabled = true,
+      },
     },
   },
+  { "rose-pine/neovim", name = "rose-pine" },
+  -- {
+  --   "shaunsingh/nord.nvim",
+  --   name = "nord",
+  --   opts = {
+  --     nord_contrast = false,
+  --     nord_borders = true,
+  --     nord_disable_background = true,
+  --     nord_cursorline_transparent = true,
+  --     nord_enable_sidebar_background = true,
+  --     nord_italic = true,
+  --     nord_bold = true,
+  --   },
+  -- },
 
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "sonokai",
-      colorscheme = "oldworld",
+      -- colorscheme = "mellifluous",
+      -- colorscheme = "oldworld",
       -- colorscheme = "bluloco",
       -- colorscheme = "catppuccin",
       -- colorscheme = "poimandres",
       -- colorscheme = "nord",
       -- colorscheme = "tokyodark",
+      colorscheme = "rose-pine",
     },
   },
 }
