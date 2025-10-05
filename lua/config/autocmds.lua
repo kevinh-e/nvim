@@ -34,14 +34,23 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.expandtab = true
   end,
 })
+--
+-- autocmd({ "InsertLeave" }, {
+--   nested = true, -- for format on save
+--   callback = function()
+--     if vim.bo.filetype ~= "" and vim.bo.buftype == "" and vim.bo.filetype ~= "python" then
+--       vim.cmd("silent! w")
+--     end
+--   end,
+--   group = general,
+--   desc = "Auto Save",
 
-autocmd({ "InsertLeave" }, {
-  nested = true, -- for format on save
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "yaml",
   callback = function()
-    if vim.bo.filetype ~= "" and vim.bo.buftype == "" and vim.bo.filetype ~= "python" then
-      vim.cmd("silent! w")
-    end
+    vim.opt_local.tabstop = 4
+    vim.opt_local.shiftwidth = 4
+    vim.opt_local.expandtab = true
   end,
-  group = general,
-  desc = "Auto Save",
 })
+-- })
