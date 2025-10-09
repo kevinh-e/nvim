@@ -64,19 +64,19 @@ return {
       },
     },
   },
-  {
-    "shaunsingh/nord.nvim",
-    name = "nord",
-    opts = {
-      nord_contrast = false,
-      nord_borders = true,
-      nord_disable_background = true,
-      nord_cursorline_transparent = true,
-      nord_enable_sidebar_background = true,
-      nord_italic = true,
-      nord_bold = true,
-    },
-  },
+  -- {
+  --   "shaunsingh/nord.nvim",
+  --   name = "nord",
+  --   opts = {
+  --     -- nord_contrast = false,
+  --     -- nord_borders = true,
+  --     -- nord_disable_background = true,
+  --     -- nord_cursorline_transparent = true,
+  --     -- nord_enable_sidebar_background = true,
+  --     -- nord_italic = true,
+  --     -- nord_bold = true,
+  --   },
+  -- },
 
   {
     "LazyVim/LazyVim",
